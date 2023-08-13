@@ -21,4 +21,8 @@ curl -sfL https://get.k3s.io | K3S_URL="https://k3sm1.kryukov.local:6443" \
       K3S_TOKEN='K1079038baf34fd74abdb5f5cbc38018cf30b86500f7b28e0934103f23d9cfb8d89::server:l%TH]c4VvCT<Xj{' sh -
 # add ingress controller to your k3s cluster
 # https://blog.thenets.org/how-to-create-a-k3s-cluster-with-nginx-ingress-controller/
+# apply service for ingress and create test ingress 
+# if dns does not exist use record like below in your hosts file
+192.168.82.17 test-ingres.master1.loc
+
 
